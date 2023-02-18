@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background-color:#FFF;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+header {
+    padding-top: 23px;
+}
+
+header nav {
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .main__btn {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    line-height: 26px;
+    background-color: #e8eff2;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+header .main__btn:hover,
+header .main__btn:focus {
+    cursor: pointer;
+    background-color: #162542;
+    color: #fff;
+    border: 2px solid #E8Eff2;
+}
+
+@media screen and (min-width: 680px) {
+    header {
+        padding-top: 0 39px;
+    }
+
+    header nav {
+        padding: 0 165px;
+    }
+}
+
+.hero .hero__content {
+    padding: 0 24px;
+    margin-top: 60px;
+}
+
+.hero .hero__content__title {
+    font-size: 3rem;
+    line-height: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #162542;
+}
+
+.hero .hero__content__description {
+    font-size: 1rem;
+    line-height: 26px;
+    color: #7b8bad;
+    margin-top: 35px;
+}
+
+.hero .hero__content__primary {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.hero .hero__content__btn {
+    background-color: #f16718;
+    color: #fff;
+}
+
+.hero .hero__content__btn:hover {
+    background-color: #f16718;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.hero .hero__content__btn:focus {
+    background-color: #f16718;
+    color: #fff;
+    opacity: 0.6;
+    border: 2px solid #162542;
+}
+
+.hero .hero__content__span {
+    display: inline-block;
+    font-weight: 600;
+    color: #7b8bad;
+}
+
+.hero .hero__img__img {
+    width: 100%;
+    margin-left: 24px;
+    margin-top: 67px;
+    border-radius: 24px 0 0 24px;
+}
+
+@media screen and (min-width: 1280px) {
+    .hero {
+        padding: 0 165px;
+        gap: 140px;
+        margin-top: 28px;
+    }
+
+    .hero .hero__img {
+        position: relative;
+    }
+
+    .hero .hero__img::before {
+        position: absolute;
+        content: "";
+        width: 135px;
+        height: 240px;
+        background-color: #e8eff2;
+        top: 68px;
+        right: -185px;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .hero .hero__content {
+        padding: 0;
+        align-self: center;
+    }
+
+    .hero .hero__content__title {
+        font-size: 3.5rem;
+        line-height: 56px;
+    }
+
+    .hero .hero__content__description {
+        font-size: 1.125rem;
+    }
+
+    .hero .hero__content__primary {
+        gap: 60px;
+        justify-content: flex-start;
+    }
+}
