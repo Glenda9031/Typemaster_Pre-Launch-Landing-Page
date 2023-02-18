@@ -46,27 +46,40 @@
 
     <main>
       <div class="primary">
-        <div class="primary__imgl">
+        <div class="primary__img1">
           <picture>
             <source media="(max-width: 680px)"
-            srcset="./assets/mobile/image-phone-and-keyboard.jpg"
-            <
+            srcset="./assets/mobile/image-phone-and-keyboard.jpg">
+            <source media="(min-width: 681px)"
+            srcset="./assets/tablet/image-phone-and-keyboard.jpg">
+            <source media="(min-width: 980px)"
+            srcset="./assets/desktop/image-phone-and-keyboard.jpg">
+            <img class="primary__img1__img image__item" src="./assets/mobile/image-phone-and-keyboard.jpg"
+            alt="phone and keyboard">
           </picture>
-
         </div>
-
+        <div class="primary__img2">
+          <picture>
+            <source media="(max-width: 680px)"
+            srcset="./assets/mobile/image-glass-and-keyboard.jpg">
+            <source media="(min-width: 681px)"
+            srcset="./assets/tablet/image-glass-and-keyboard.jpg">
+            <source media="(min-width: 980px)"
+            srcset="./assets/desktop/image-glass-and-keyboard.jpg">
+            <img class="primary__img2__img image__item" src="./assets//mobile/image-glass-and-keyboard.jpg" alt="glass and keyboard">
+          </picture>
+        </div>
+        <div class="primary__content">
+          <h2 class="primary__content__title">Mechanical wireless keyboard</h2>
+          <p class="primary__content__description">The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety 
+            of switches and keycaps, along with reliable wireless connectivity.</p>
+        </div>
       </div>
+
+      
     </main>
 
   </div>
-
-
-  
-  
-
-  Mechanical wireless keyboard
-  The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety 
-  of switches and keycaps, along with reliable wireless connectivity.
 
   Highly compatible
   Easy to use and works well with all major computer brands, gaming consoles and mobile devices. 
